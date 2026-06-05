@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta http-equiv="X-Content-Type-Options" content="nosniff">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <meta http-equiv="Permissions-Policy" content="geolocation=(), microphone=(), camera=()">
+  <meta name="theme-color" content="#0a0b1e">
+  <meta name="description" content="Время переезда 124 — переезды и грузоперевозки в Красноярске. Газель 1.5, 3 и 5 тонн.">
+  <title>Время переезда 124 — грузоперевозки</title>
+  <link rel="icon" type="image/png" href="images/logo-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;0,800;1,700;1,800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css?v=6">
+  <link rel="preload" as="image" href="images/hero-truck-night.png">
+</head>
+<body>
+  <header class="header" id="top">
+    <div class="container header__inner">
+      <a href="#top" class="header__brand" aria-label="Время переезда 124 — на главную">
+        <img class="header__brand-icon" src="images/logo-icon.png" alt="" width="361" height="573" decoding="async">
+        <span class="header__brand-name">
+          <span class="header__brand-line">Время</span>
+          <span class="header__brand-line">переезда <span class="header__brand-num">124</span></span>
+        </span>
+      </a>
+
+      <nav class="header__nav" id="nav">
+        <div class="header__nav-links">
+          <a href="#fleet">Автопарк</a>
+          <a href="#services">Услуги</a>
+          <a href="#advantages">Преимущества</a>
+          <a href="#process">Как работаем</a>
+          <a href="#reviews">Отзывы</a>
+          <a href="#contacts">Контакты</a>
+        </div>
+        <div class="header__nav-phones">
+          <a href="tel:+79659018305">+7 (965) 901-83-05</a>
+        </div>
+      </nav>
+
+      <div class="header__right">
+        <div class="header__contacts">
+          <a href="tel:+79659018305" class="header__phone">+7 (965) 901-83-05</a>
+          <div class="messengers messengers--compact header__messengers">
+            <a href="https://t.me/+79504398338" class="messenger-btn messenger-btn--tg js-tg-link" title="Telegram" aria-label="Telegram">
+              <span class="messenger-btn__badge" aria-hidden="true">TG</span>
+            </a>
+          </div>
+          <a href="tel:+79659018305" class="btn btn--primary btn--sm">Позвонить</a>
+        </div>
+      </div>
+
+      <button class="header__burger" id="burger" aria-label="Меню" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="header__backdrop" id="navBackdrop" hidden></div>
+  </header>
+
+  <section class="hero">
+    <div class="hero__carousel" id="heroCarousel" aria-label="Фото автопарка">
+      <div class="hero__slides">
+        <div class="hero__slide is-active" style="--hero-pos: 58% center; background-image: url('images/hero-truck-night.png');"></div>
+        <div class="hero__slide" style="--hero-pos: 55% center; background-image: url('images/hero-truck-1.png');"></div>
+        <div class="hero__slide" style="--hero-pos: 55% center; background-image: url('images/hero-truck-2.png');"></div>
+      </div>
+      <button class="hero__arrow hero__arrow--prev" id="heroPrev" type="button" aria-label="Предыдущее фото">‹</button>
+      <button class="hero__arrow hero__arrow--next" id="heroNext" type="button" aria-label="Следующее фото">›</button>
+    </div>
+    <div class="hero__overlay" aria-hidden="true"></div>
+    <div class="hero__inner">
+      <div class="hero__content">
+        <div class="hero__brand">
+          <img
+            class="hero__logo-icon"
+            src="images/logo-icon.png"
+            alt=""
+            width="361"
+            height="573"
+            decoding="async"
+          >
+          <p class="hero__brand-name">
+            Время<br>
+            переезда<br>
+            <span class="hero__brand-num">124</span>
+          </p>
+        </div>
+        <h1>Грузоперевозки<br>и переезды</h1>
+        <p class="hero__lead">Организуем всё от и до. Быстрая подача · наличный и безналичный расчёт</p>
+        <ul class="hero__list">
+          <li><span class="hero__check" aria-hidden="true">✓</span> Профессиональная команда</li>
+          <li><span class="hero__check" aria-hidden="true">✓</span> Современный транспорт</li>
+          <li><span class="hero__check" aria-hidden="true">✓</span> Индивидуальный подход</li>
+        </ul>
+        <div class="hero__actions">
+          <a href="tel:+79659018305" class="btn btn--primary">Позвонить сейчас</a>
+          <a href="#services" class="btn btn--ghost">Наши услуги →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="highlights">
+    <div class="container">
+      <div class="highlights__grid">
+        <article class="highlight-card">
+          <div class="highlight-card__icon" aria-hidden="true">
+            <svg viewBox="0 0 48 48" fill="none"><path d="M8 22h32v18H8V22z" stroke="currentColor" stroke-width="2"/><path d="M14 22V14h8v8M26 22V10h8v12" stroke="currentColor" stroke-width="2"/></svg>
+          </div>
+          <h3>Домашние переезды</h3>
+          <p>Квартиры, дома, дачи. Аккуратно и бережно</p>
+        </article>
+        <article class="highlight-card">
+          <div class="highlight-card__icon" aria-hidden="true">
+            <svg viewBox="0 0 48 48" fill="none"><path d="M10 28h28l4 8H6l4-8z" stroke="currentColor" stroke-width="2"/><path d="M16 28V18h6v10M28 28V14h6v14" stroke="currentColor" stroke-width="2"/></svg>
+          </div>
+          <h3>Вывоз строительного мусора</h3>
+          <p>Быстрое удаление мусора любой сложности</p>
+        </article>
+        <article class="highlight-card">
+          <div class="highlight-card__icon" aria-hidden="true">
+            <svg viewBox="0 0 48 48" fill="none"><rect x="6" y="20" width="28" height="16" rx="2" stroke="currentColor" stroke-width="2"/><path d="M34 24h8v12H34V24z" stroke="currentColor" stroke-width="2"/></svg>
+          </div>
+          <h3>Перевозка оборудования</h3>
+          <p>Такелажные работы и надёжная доставка</p>
+        </article>
+        <article class="highlight-card">
+          <div class="highlight-card__icon" aria-hidden="true">
+            <svg viewBox="0 0 48 48" fill="none"><path d="M24 8l14 6v10c0 10-6 16-14 18C16 40 10 34 10 24V14l14-6z" stroke="currentColor" stroke-width="2"/><path d="M18 24l4 4 8-10" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+          </div>
+          <h3>Надёжность и пунктуальность</h3>
+          <p>Соблюдаем сроки и договорённости</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="fleet">
+    <div class="container">
+      <div class="section__head">
+        <span class="section__tag">Автопарк</span>
+        <h2>Разновидности наших машин</h2>
+      </div>
+      <div class="vehicles-grid">
+        <article class="vehicle-card">
+          <div class="vehicle-card__photo">
+            <img src="images/fleet-gazelle.png" alt="Газель до 1,5 тонн — Время переезда 124" width="640" height="400" loading="lazy" decoding="async">
+          </div>
+          <div class="vehicle-card__body">
+            <h3>Газель · до 1,5 т</h3>
+            <p>Квартирный переезд, мебель, небольшие грузы</p>
+            <dl class="vehicle-specs">
+              <div><dt>Длина кузова</dt><dd>3 м</dd></div>
+              <div><dt>Ширина</dt><dd>1,95 м</dd></div>
+              <div><dt>Высота</dt><dd>1,6 м</dd></div>
+            </dl>
+            <a href="tel:+79659018305" class="btn btn--primary btn--block">Позвонить</a>
+          </div>
+        </article>
+        <article class="vehicle-card">
+          <div class="vehicle-card__photo">
+            <img src="images/fleet-3ton.png" alt="Грузовик 3 тонны — Время переезда 124" width="640" height="400" loading="lazy" decoding="async">
+          </div>
+          <div class="vehicle-card__body">
+            <h3>3-тонник</h3>
+            <p>Средние переезды и паллетные грузы</p>
+            <dl class="vehicle-specs">
+              <div><dt>Длина кузова</dt><dd>4,2 м</dd></div>
+              <div><dt>Ширина</dt><dd>2,10 м</dd></div>
+              <div><dt>Высота</dt><dd>2,30 м</dd></div>
+            </dl>
+            <a href="tel:+79659018305" class="btn btn--primary btn--block">Позвонить</a>
+          </div>
+        </article>
+        <article class="vehicle-card">
+          <div class="vehicle-card__photo">
+            <img src="images/fleet-5ton.png" alt="Грузовик 5 тонн — Время переезда 124" width="640" height="400" loading="lazy" decoding="async">
+          </div>
+          <div class="vehicle-card__body">
+            <h3>5-тонник</h3>
+            <p>Крупногабарит, офис и большие объёмы</p>
+            <dl class="vehicle-specs">
+              <div><dt>Длина кузова</dt><dd>5–6 м</dd></div>
+              <div><dt>Ширина</dt><dd>2,30–2,40 м</dd></div>
+              <div><dt>Высота</dt><dd>2,30 м</dd></div>
+            </dl>
+            <a href="tel:+79659018305" class="btn btn--primary btn--block">Позвонить</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--alt" id="services">
+    <div class="container">
+      <div class="section__head"><h2>Наши услуги</h2></div>
+      <div class="services-list">
+        <article class="service-tile">
+          <div class="service-tile__icon" aria-hidden="true">
+            <svg viewBox="0 0 48 48" fill="none"><path d="M6 28h20v10H6V28z" stroke="currentColor" stroke-width="2"/><path d="M26 24h12l4 8v6H26V24z" stroke="currentColor" stroke-width="2"/><circle cx="14" cy="38" r="3" stroke="currentColor" stroke-width="2"/><circle cx="36" cy="38" r="3" stroke="currentColor" stroke-width="2"/><path d="M8 16h14l4 8M8 12h10" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+          </div>
+          <div class="service-tile__body">
+            <h3>Грузоперевозки межгород</h3>
+            <p>Перевозка грузов по городу и между городами</p>
+          </div>
+        </article>
+        <article class="service-tile">
+          <div class="service-tile__icon" aria-hidden="true">
+            <svg viewBox="0 0 48 48" fill="none"><path d="M24 8 8 20v18h32V20L24 8z" stroke="currentColor" stroke-width="2"/><rect x="18" y="26" width="12" height="12" stroke="currentColor" stroke-width="2"/><path d="M34 32h6v8h-6v-8zM34 28v4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+          </div>
+          <div class="service-tile__body">
+            <h3>Квартирные переезды</h3>
+            <p>Квартирный, дачный и офисный переезд</p>
+          </div>
+        </article>
+        <article class="service-tile">
+          <div class="service-tile__icon" aria-hidden="true">
+            <svg viewBox="0 0 48 48" fill="none"><circle cx="15" cy="13" r="4" stroke="currentColor" stroke-width="2"/><path d="M8 38V26l7-5 7 3v14" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><rect x="26" y="22" width="14" height="12" rx="1" stroke="currentColor" stroke-width="2"/><path d="M40 28h4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+          </div>
+          <div class="service-tile__body">
+            <h3>Услуги грузчиков</h3>
+            <p>Погрузка, разгрузка, сборка и разборка мебели</p>
+          </div>
+        </article>
+        <article class="service-tile">
+          <div class="service-tile__icon" aria-hidden="true">
+            <svg viewBox="0 0 48 48" fill="none"><path d="M10 28h28l4 8H6l4-8z" stroke="currentColor" stroke-width="2"/><path d="M16 28V18h6v10M28 28V14h6v14" stroke="currentColor" stroke-width="2"/><path d="M22 10v4M26 8v6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+          </div>
+          <div class="service-tile__body">
+            <h3>Вывоз мусора</h3>
+            <p>Вывоз строительного и бытового мусора</p>
+          </div>
+        </article>
+        <article class="service-tile">
+          <div class="service-tile__icon" aria-hidden="true">
+            <svg viewBox="0 0 48 48" fill="none"><path d="M8 32V18c0-3 3-5 8-5h16c5 0 8 2 8 5v14" stroke="currentColor" stroke-width="2"/><path d="M8 32h32v5H8v-5z" stroke="currentColor" stroke-width="2"/><path d="M15 18v14M21 18v14M27 18v14M33 18v14" stroke="currentColor" stroke-width="2"/></svg>
+          </div>
+          <div class="service-tile__body">
+            <h3>Перевозка пианино</h3>
+            <p>Аккуратная перевозка пианино и роялей</p>
+          </div>
+        </article>
+        <article class="service-tile">
+          <div class="service-tile__icon" aria-hidden="true">
+            <svg viewBox="0 0 48 48" fill="none"><path d="M8 28V22c0-4 4-7 10-7h12c6 0 10 3 10 7v6" stroke="currentColor" stroke-width="2"/><path d="M6 28h36v8c0 2-2 4-4 4H10c-2 0-4-2-4-4v-8z" stroke="currentColor" stroke-width="2"/><path d="M6 24V20M42 24V20" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+          </div>
+          <div class="service-tile__body">
+            <h3>Перевозка мебели</h3>
+            <p>Мебель, техника и крупногабаритные грузы</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="advantages">
+    <div class="container">
+      <div class="section__head"><h2>Наши преимущества</h2></div>
+      <div class="services-list">
+        <article class="service-tile">
+          <div class="service-tile__icon service-tile__icon--num" aria-hidden="true">01</div>
+          <div class="service-tile__body">
+            <h3>Большой опыт работы</h3>
+            <p>Многолетний опыт перевозок и переездов в Красноярске</p>
+          </div>
+        </article>
+        <article class="service-tile">
+          <div class="service-tile__icon service-tile__icon--num" aria-hidden="true">02</div>
+          <div class="service-tile__body">
+            <h3>Честные условия</h3>
+            <p>Прозрачная работа без скрытых доплат</p>
+          </div>
+        </article>
+        <article class="service-tile">
+          <div class="service-tile__icon service-tile__icon--num" aria-hidden="true">03</div>
+          <div class="service-tile__body">
+            <h3>Оплата удобным способом</h3>
+            <p>Наличный и безналичный расчёт</p>
+          </div>
+        </article>
+        <article class="service-tile">
+          <div class="service-tile__icon service-tile__icon--num" aria-hidden="true">04</div>
+          <div class="service-tile__body">
+            <h3>Тысяча довольных клиентов</h3>
+            <p>Рекомендации и повторные заказы</p>
+          </div>
+        </article>
+        <article class="service-tile">
+          <div class="service-tile__icon service-tile__icon--num" aria-hidden="true">05</div>
+          <div class="service-tile__body">
+            <h3>Всегда на связи</h3>
+            <p>Круглосуточная диспетчерская служба</p>
+          </div>
+        </article>
+        <article class="service-tile">
+          <div class="service-tile__icon service-tile__icon--num" aria-hidden="true">06</div>
+          <div class="service-tile__body">
+            <h3>Гарантия качества</h3>
+            <p>Бережное отношение к вашему имуществу</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--alt" id="process">
+    <div class="container">
+      <div class="section__head"><h2>Как мы работаем</h2></div>
+      <div class="services-list services-list--steps">
+        <article class="service-tile">
+          <div class="service-tile__icon service-tile__icon--num" aria-hidden="true">01</div>
+          <div class="service-tile__body">
+            <h3>Звоните или пишите</h3>
+            <p>По телефону или в Telegram</p>
+          </div>
+        </article>
+        <article class="service-tile">
+          <div class="service-tile__icon service-tile__icon--num" aria-hidden="true">02</div>
+          <div class="service-tile__body">
+            <h3>Отвечаем быстро</h3>
+            <p>Уточняем детали и согласуем условия</p>
+          </div>
+        </article>
+        <article class="service-tile">
+          <div class="service-tile__icon service-tile__icon--num" aria-hidden="true">03</div>
+          <div class="service-tile__body">
+            <h3>Выезд после заявки</h3>
+            <p>Быстрая подача автомобиля</p>
+          </div>
+        </article>
+        <article class="service-tile">
+          <div class="service-tile__icon service-tile__icon--num" aria-hidden="true">04</div>
+          <div class="service-tile__body">
+            <h3>Выполнение работ</h3>
+            <p>Быстро, качественно, удобная оплата</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="reviews">
+    <div class="container">
+      <h2 class="section__title section__title--left">Отзывы клиентов</h2>
+      <div class="reviews-layout">
+        <div class="reviews-panel">
+          <div class="reviews-carousel">
+            <button class="reviews-carousel__btn" id="reviewsPrev" aria-label="Назад" type="button">‹</button>
+            <div class="reviews-carousel__track" id="reviewsTrack"></div>
+            <button class="reviews-carousel__btn" id="reviewsNext" aria-label="Вперёд" type="button">›</button>
+          </div>
+          <p class="reviews-swipe-hint">Листайте отзывы стрелками или пальцем</p>
+        </div>
+
+        <div class="reviews-gallery" id="gallery">
+            <h3 class="reviews-gallery__title">Фотогалерея</h3>
+            <p class="reviews-gallery__lead">Наши работы — реальные переезды и перевозки</p>
+            <div class="gallery-carousel">
+              <button class="gallery-carousel__btn" id="galleryPrev" type="button" aria-label="Предыдущие фото">‹</button>
+              <div class="gallery-carousel__viewport">
+                <div class="gallery-carousel__track" id="galleryTrack"></div>
+              </div>
+              <button class="gallery-carousel__btn" id="galleryNext" type="button" aria-label="Следующие фото">›</button>
+            </div>
+            <p class="gallery-carousel__hint">3 фото в ряд · листайте стрелками</p>
+        </div>
+
+        <div class="review-form-wrap">
+        <h3 class="review-form__title">Оставить отзыв</h3>
+        <p class="review-form__intro">Мы будем благодарны, если вы оставите отзыв о нашей работе — ваше мнение очень важно для нас.</p>
+        <form class="review-form" id="reviewForm" novalidate>
+          <div class="review-form__field">
+            <span class="review-form__label">Ваша оценка</span>
+            <div class="star-rating" id="starRating" role="radiogroup" aria-label="Оценка от 1 до 5">
+              <button type="button" class="star-rating__btn" data-value="1" aria-label="1 звезда">★</button>
+              <button type="button" class="star-rating__btn" data-value="2" aria-label="2 звезды">★</button>
+              <button type="button" class="star-rating__btn" data-value="3" aria-label="3 звезды">★</button>
+              <button type="button" class="star-rating__btn" data-value="4" aria-label="4 звезды">★</button>
+              <button type="button" class="star-rating__btn" data-value="5" aria-label="5 звезд">★</button>
+            </div>
+            <input type="hidden" name="rating" id="reviewRating" value="0" required>
+          </div>
+          <div class="review-form__field">
+            <label class="review-form__label" for="reviewName">Имя</label>
+            <input class="review-form__input" type="text" id="reviewName" name="name" maxlength="60" placeholder="Как к вам обращаться" required autocomplete="name">
+          </div>
+          <div class="review-form__field review-form__field--text">
+            <label class="review-form__label" for="reviewText">Отзыв</label>
+            <textarea class="review-form__input review-form__textarea" id="reviewText" name="text" rows="4" maxlength="800" placeholder="Расскажите о переезде" required></textarea>
+          </div>
+          <div class="review-form__hp" aria-hidden="true">
+            <label for="reviewWebsite">Сайт</label>
+            <input type="text" id="reviewWebsite" name="website" tabindex="-1" autocomplete="off">
+            <label for="reviewEmail">Email</label>
+            <input type="email" id="reviewEmail" name="email" tabindex="-1" autocomplete="off">
+          </div>
+          <button type="submit" class="btn btn--primary review-form__submit">Отправить отзыв</button>
+          <p class="review-form__status" id="reviewFormStatus" hidden></p>
+        </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="gallery-lightbox" id="galleryLightbox" hidden>
+    <button type="button" class="gallery-lightbox__backdrop" aria-label="Закрыть"></button>
+    <button type="button" class="gallery-lightbox__close" aria-label="Закрыть">×</button>
+    <img class="gallery-lightbox__img" id="galleryLightboxImg" alt="">
+  </div>
+
+  <section class="section" id="contacts">
+    <div class="container">
+      <h2 class="section__title section__title--left">Свяжитесь с нами</h2>
+      <div class="contacts-grid">
+        <div class="contact-card">
+          <h3>Телефон</h3>
+          <a href="tel:+79659018305" class="contact-card__phone">+7 (965) 901-83-05</a>
+          <p>Нажмите на номер — откроется звонок</p>
+        </div>
+        <div class="contact-card">
+          <h3>Мессенджеры</h3>
+          <p>Напишите в Telegram</p>
+          <div class="messengers messengers--compact contact-card__messengers">
+            <a href="https://t.me/+79504398338" class="messenger-btn messenger-btn--tg js-tg-link" title="Telegram" aria-label="Telegram">
+              <span class="messenger-btn__badge" aria-hidden="true">TG</span>
+              <span class="messenger-btn__text">Telegram</span>
+            </a>
+          </div>
+        </div>
+        <div class="contact-card">
+          <h3>График</h3>
+          <p class="contact-card__phone">Круглосуточно</p>
+          <p>Диспетчерская на связи 24/7</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <p>ВСЕГДА БЫСТРО · КАЧЕСТВЕННО · НАДЁЖНО</p>
+      </div>
+      <p class="footer__copy">© 2026 Время переезда 124. Все права защищены.</p>
+    </div>
+  </footer>
+
+  <div class="tg-sheet" id="tgSheet" hidden>
+    <button type="button" class="tg-sheet__backdrop" aria-label="Закрыть"></button>
+    <div class="tg-sheet__panel" role="dialog" aria-modal="true" aria-labelledby="tgSheetTitle">
+      <h3 class="tg-sheet__title" id="tgSheetTitle">Telegram</h3>
+      <p class="tg-sheet__lead">Как открыть чат?</p>
+      <div class="tg-sheet__actions">
+        <a class="btn btn--primary btn--block" id="tgSheetApp" href="#">Открыть в приложении</a>
+        <a class="btn btn--block tg-sheet__web" id="tgSheetWeb" href="#" target="_blank" rel="noopener noreferrer">Открыть в браузере</a>
+        <button type="button" class="btn btn--ghost tg-sheet__cancel" id="tgSheetCancel">Отмена</button>
+      </div>
+    </div>
+  </div>
+
+  <a href="tel:+79659018305" class="fab" aria-label="Позвонить">
+    <svg viewBox="0 0 24 24" width="26" height="26" fill="currentColor"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+    <span>Позвонить</span>
+  </a>
+
+  <script src="js/config.js"></script>
+  <script src="js/security.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/metrika.js" defer></script>
+</body>
+</html>
