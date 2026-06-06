@@ -478,6 +478,9 @@ body.gallery-open { overflow: hidden; }
   margin-bottom: 1.25rem;
   text-shadow: 0 1px 12px rgba(0, 0, 0, 0.35);
 }
+.hero__lead-line {
+  display: block;
+}
 .hero__list {
   list-style: none;
   margin-bottom: 1.75rem;
@@ -1795,5 +1798,16 @@ body.tg-sheet-open { overflow: hidden; }
   }
   .reviews-gallery .photo-gallery__grid {
     grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 900px) {
+  .hero__slides {
+    filter: brightness(1.18) saturate(1.06);
+  }
+  .hero__overlay {
+    background:
+      linear-gradient(180deg, rgba(10, 11, 30, 0.68) 0%, rgba(10, 11, 30, 0.42) 52%, rgba(26, 11, 46, 0.18) 100%),
+      linear-gradient(to top, var(--bg) 0%, transparent 18%);
   }
 }
