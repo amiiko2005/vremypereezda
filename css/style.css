@@ -449,17 +449,22 @@ body.gallery-open { overflow: hidden; }
   color: var(--muted);
 }
 .hero__tagline {
-  font-size: clamp(0.95rem, 2.1vw, 1.2rem);
-  font-weight: 600;
+  font-size: clamp(1.05rem, 2.35vw, 1.5rem);
+  font-weight: 800;
   font-style: italic;
-  color: rgba(255, 255, 255, 0.92);
-  letter-spacing: 0.01em;
-  margin-bottom: 0.45rem;
-  text-shadow: 0 1px 10px rgba(0, 0, 0, 0.3);
+  color: var(--text);
+  letter-spacing: -0.02em;
+  line-height: 1.15;
+  margin-top: 2.75rem;
+  margin-bottom: 1.75rem;
+}
+.hero__tagline-line {
+  display: block;
 }
 .hero__content h1 {
   font-size: clamp(1.45rem, 3vw, 2.15rem);
   font-weight: 800;
+  font-style: italic;
   line-height: 1.12;
   letter-spacing: -0.02em;
   margin-bottom: 0.85rem;
@@ -1375,6 +1380,12 @@ body.tg-sheet-open { overflow: hidden; }
     justify-content: flex-start;
     padding-top: calc(var(--header-min) + env(safe-area-inset-top, 0px));
   }
+  .hero__slide {
+    --hero-pos: 72% 42%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 72% 42%;
+  }
   .hero__inner {
     margin-left: 0;
     margin-bottom: 0;
@@ -1388,9 +1399,10 @@ body.tg-sheet-open { overflow: hidden; }
     width: 100%;
   }
   .hero__tagline {
-    font-size: clamp(0.88rem, 3.5vw, 1.05rem);
-    line-height: 1.35;
-    margin-bottom: 0.4rem;
+    font-size: clamp(0.95rem, 3.2vw, 1.15rem);
+    margin-top: 2.25rem;
+    margin-bottom: 1.45rem;
+    line-height: 1.18;
   }
   .hero__lead {
     margin-inline: 0;
@@ -1418,7 +1430,7 @@ body.tg-sheet-open { overflow: hidden; }
 }
 
 @media (max-width: 1024px) {
-  .hero__slide { --hero-pos: 55% center; }
+  .hero__slide { --hero-pos: 45% center; }
   .hero__arrow--prev { right: 4.5rem; }
   .hero__arrow--next { right: 1rem; }
   .hero__overlay {
@@ -1541,11 +1553,16 @@ body.tg-sheet-open { overflow: hidden; }
 
   /* Hero */
   .hero {
-    min-height: min(78svh, 560px);
+    min-height: min(74svh, 520px);
     align-items: flex-start;
     justify-content: flex-start;
   }
-  .hero__slide { --hero-pos: 60% 40%; }
+  .hero__slide {
+    --hero-pos: 70% 40%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 70% 40%;
+  }
   .hero__arrow {
     width: 40px;
     height: 40px;
@@ -1564,8 +1581,10 @@ body.tg-sheet-open { overflow: hidden; }
   }
   .hero__content h1 { font-size: clamp(1.35rem, 5.5vw, 1.75rem); }
   .hero__tagline {
-    font-size: clamp(0.88rem, 3.8vw, 1rem);
-    margin-bottom: 0.35rem;
+    font-size: clamp(0.92rem, 4vw, 1.08rem);
+    margin-top: 2rem;
+    margin-bottom: 1.3rem;
+    line-height: 1.2;
   }
   .hero__lead {
     font-size: clamp(1rem, 4.2vw, 1.12rem);
@@ -1756,8 +1775,9 @@ body.tg-sheet-open { overflow: hidden; }
   }
 
   .hero__tagline {
-    font-size: clamp(0.82rem, 3.6vw, 0.92rem);
-    line-height: 1.4;
+    font-size: clamp(0.88rem, 3.8vw, 0.98rem);
+    margin-top: 1.75rem;
+    margin-bottom: 1.15rem;
   }
   .hero__content h1 {
     font-size: clamp(1.25rem, 5.8vw, 1.55rem);
